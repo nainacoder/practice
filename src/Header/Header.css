@@ -1,0 +1,50 @@
+.header{
+    background-color: black;
+    position:absolute;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 5em;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 1rem;
+}
+.logo h2 {
+    font-size: 30px;
+    color: grey;
+    
+}
+
+.ul_items{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+.ul_items li {
+margin-right: 3.5rem;
+
+}
+
+.ul_items a{
+    color: grey;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.ul_items a:hover{
+    color:gold
+}
+
+.logo h2 a{
+    text-decoration: none;
+    color: grey;
+}

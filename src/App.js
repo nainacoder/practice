@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
-
+import Counter from "./Pages/Counter/Counter";
+import Header from "./Header/Header";
+import Login from "./Pages/Login/Login";
+import LandingPage from "./Pages/LandingPage/LandingPage"
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <BrowserRouter>
+    <Header/>
+    {/* <ErrorPage/> */}
+    <Routes>
+      <Route exact path="/" element={<LandingPage/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/counter" element={<Counter/>}/>
+      <Route path="#"  element={<ErrorPage/>}/>
+    </Routes>
+   </BrowserRouter>
+   
   );
 }
 

@@ -1,0 +1,20 @@
+.counter_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+   
+}
+
+.counter_main{
+    background-color: black;
+    padding: 20px 80px;
+    height: 25vh;
+}
+h3{
+    color: grey;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}

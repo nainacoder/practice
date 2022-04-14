@@ -1,0 +1,27 @@
+.button_style{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.addButton{
+    background-color: green;
+    width:100px;
+    margin-right: 10px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.subButton{
+    background-color: red;
+    width:100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reset{
+    background-color: rgb(167, 167, 15);
+    width: 100px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
